@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}" SchemaVersion="94">
+	<States>
+		<WorkUnit Name="Music" ID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music_Class" ID="{ACDE9A20-EA91-4EC9-86FF-7BE2CF6D50B4}">
+					<ChildrenList>
+						<State Name="None" ID="{E5DB7FC5-745A-43E1-BF4E-02DC129E4472}"/>
+						<State Name="Story" ID="{D3ED034B-C613-4C85-831E-D86F03DEDC1F}"/>
+						<State Name="Landmark" ID="{D793868A-BFA2-4F44-A9E0-AF8353D49E1E}"/>
+						<State Name="Explore" ID="{B5DC0FAE-A60E-4DA1-B76C-C9C57D642AA9}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}">
+					<ChildrenList>
+						<State Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}"/>
+						<State Name="Low" ID="{CF6FEE23-AF45-4A58-B30D-D74522B0F86E}"/>
+						<State Name="Medium" ID="{54623CD6-857C-4996-8096-325C4723EF39}"/>
+						<State Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
