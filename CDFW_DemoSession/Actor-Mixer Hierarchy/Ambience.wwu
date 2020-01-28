@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2DDF1D59-7DD6-4381-9563-B4423CFC78AA}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Ambience" ID="{2DDF1D59-7DD6-4381-9563-B4423CFC78AA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="ExampleLocation" ID="{15DDC8FB-41EC-4A3D-8ABA-14B571CA119B}" ShortID="800487894">
+					<ChildrenList>
+						<Folder Name="Env_Emitters" ID="{D450F406-68C3-44D0-9D9C-ADE8790319E5}" ShortID="694876105"/>
+						<Folder Name="Background" ID="{59D78890-FFF2-4009-B6C7-7D2D3C11A03E}" ShortID="748010442"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

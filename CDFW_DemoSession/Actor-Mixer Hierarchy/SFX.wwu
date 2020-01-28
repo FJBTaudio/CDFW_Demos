@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{90B7EDB0-1413-4B47-9134-14B131C2E5C4}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{90B7EDB0-1413-4B47-9134-14B131C2E5C4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Magic" ID="{5CE38007-E79E-463A-B0FF-9F9496BD804E}" ShortID="165686133"/>
+				<Folder Name="Weapons" ID="{D44BC32A-5F66-4D64-8C59-426821EF94E9}" ShortID="1046014381"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

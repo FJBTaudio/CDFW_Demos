@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4899F75A-CCEC-4AA6-966D-AA0AFF8D8FCD}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{4899F75A-CCEC-4AA6-966D-AA0AFF8D8FCD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Menu" ID="{F85D8CFE-2CE8-42B8-82BB-9DC8C6A69F10}" ShortID="940647868"/>
+				<Folder Name="Inventory" ID="{DE4CE69D-DD17-4D29-89DB-80F564A7FCF7}" ShortID="504076690"/>
+				<Folder Name="In-Game" ID="{D97A90C0-F6E5-4E38-BFBF-C53F08D49662}" ShortID="641876653"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

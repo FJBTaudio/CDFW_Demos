@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{50806901-7EC1-4986-BC10-EF775CE442DB}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Foley" ID="{50806901-7EC1-4986-BC10-EF775CE442DB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="PC" ID="{FAFD6418-7E6D-408E-A377-15DE9F607288}" ShortID="567708876"/>
+				<Folder Name="NPC" ID="{89406192-4EA7-4EAE-A4AF-DCDF81E1783F}" ShortID="982378562"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
