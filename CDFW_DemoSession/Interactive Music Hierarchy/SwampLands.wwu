@@ -6,6 +6,13 @@
 				<Folder Name="Justin_SwamplandMusicDemo" ID="{AFB5B726-BCA3-4011-91A9-35D0F2096512}" ShortID="143362659">
 					<ChildrenList>
 						<MusicPlaylistContainer Name="SwampLands_MxDemo_Switch_NoRand" ID="{D8DE7D63-E6DF-479C-BB21-AD3FF4ECFDB0}" ShortID="15315160">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
@@ -1508,7 +1515,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicPlaylistContainer Name="SwampLands_Low" ID="{3F4058E0-6248-4E39-B1F5-C9743E008A49}" ShortID="1038074183">
+								<MusicPlaylistContainer Name="SwampLands_Medium" ID="{3F4058E0-6248-4E39-B1F5-C9743E008A49}" ShortID="1038074183">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
@@ -1517,6 +1524,997 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="SwampLands_MxDemo_Mod00" ID="{DF3F7CD1-61F2-4792-9FAE-1972D07638F9}" ShortID="396556636">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12816.9315158899"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod00_Rhythm" ID="{CD5008EC-20F1-4341-A661-838C208CC8DD}" ShortID="529168542">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{4A890EA6-63E9-4604-8A80-B56D2CF9A9C5}" ShortID="735768717">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="732870527"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0" ID="{60334A58-4028-48A7-8041-7C6E333C2873}" ShortID="76290343">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="281107942"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{637B74C0-D7A9-42C9-856E-1D6D43FDC355}" ShortID="626126833">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="10694344"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{91D68135-9DE7-4DF7-9DA2-DB6B083FF4A6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{69839684-3953-4986-AE2F-E35D36635C87}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7DCA7E06-30E2-46A5-9F5B-A69CAED8173E}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{9BB47652-5500-410A-96E6-244E3C072BE6}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{4A890EA6-63E9-4604-8A80-B56D2CF9A9C5}"/>
+																</MusicClip>
+															</ClipList>
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{07DF032C-7177-4AD2-90B5-DAA4D3A6ADA8}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{4006416C-E740-4C22-8CE9-60E70FF73BD2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{637B74C0-D7A9-42C9-856E-1D6D43FDC355}"/>
+																</MusicClip>
+															</ClipList>
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{CADE9B9A-A0D3-47E9-8954-6C969F892DA0}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0" ID="{1B41BE69-3576-4252-A5B7-C2E230402476}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0" ID="{60334A58-4028-48A7-8041-7C6E333C2873}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod00_Harmony" ID="{2CE0F3AB-5F91-412E-B5D2-CA991A4ECE30}" ShortID="12864727">
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{EED6B698-312D-4502-AED6-51F6AB43F2B1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{FF054A6B-6245-4322-9BB6-4FF5868A9D04}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{4A9589D4-6A18-4666-9E27-D07AF2E14167}">
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod00_Melody" ID="{34193B2F-3CD3-4483-8E10-C4D43D193FD5}" ShortID="749778038">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0" ID="{A09C5FAF-55C8-4471-BADF-9DD8AE0149EE}" ShortID="811656965">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="232843176"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0" ID="{7168E880-F3A9-46B4-B5D6-E86BFA17BEDC}" ShortID="24990584">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="671508526"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{B2C60391-EB14-4732-9C18-F6E9AC025004}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{847B5FD8-2FA8-4379-8C05-36AAAAFC25A1}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0" ID="{E4CFFBDF-45C4-4B9F-B5C8-6211C6C9BA66}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12094.1950113379"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0" ID="{A09C5FAF-55C8-4471-BADF-9DD8AE0149EE}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{C675AC82-6CB0-4B25-897B-60C547DE2C65}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0" ID="{55C34EE6-B739-4DAF-A699-7712609E64D5}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0" ID="{7168E880-F3A9-46B4-B5D6-E86BFA17BEDC}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{636E44FA-2C66-43B6-837C-5D7BE92ED140}"/>
+												<MusicCue Name="Exit Cue" ID="{1A8E9B03-A7BA-432B-8DCB-DB61E011DC39}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="SwampLands_MxDemo_Mod02" ID="{E38663BA-8AE1-4EBE-9ACA-11FAF012756C}" ShortID="1068029027">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12885.1360544218"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Harmony" ID="{CBCCBE39-AAB3-4A56-A751-F832FEFC8B55}" ShortID="53794667">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{CCBBE6B6-98CE-4936-BF59-8C4EAB2A378F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{02729277-50F6-4C85-8524-1EF6C087B19D}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{457D4A89-16A8-4435-B538-14A2257EE501}">
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Melody" ID="{6D44430F-95AF-46D0-BCE2-9FDCD2B9ED44}" ShortID="964791202">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2" ID="{B5A9FEA1-4DC2-4FBA-91AD-2B47291F8853}" ShortID="991987021">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="834665210"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2" ID="{95746DAF-EDCE-4F39-AF92-8A30090F3CB6}" ShortID="71706090">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="15562719"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{315924AC-2030-4416-A817-FD1851ABAFE0}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7404C402-DA1C-4A8E-8631-E780E06B2AED}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2" ID="{822AE2F2-7CF8-4910-92BC-B3AA1BA3F50B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2" ID="{B5A9FEA1-4DC2-4FBA-91AD-2B47291F8853}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{B6B294E8-8735-44F7-A07F-BA6CE840DC53}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2" ID="{81CD7E0F-E78D-4605-81E3-5DE660570AFE}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2" ID="{95746DAF-EDCE-4F39-AF92-8A30090F3CB6}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Rhythm" ID="{317FB6E6-E933-43CB-8CD0-620B0A5B0B82}" ShortID="176872044">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{CCB87A85-2447-41BE-BF63-75437405512B}" ShortID="1015031903">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="965882114"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2" ID="{7CE38A84-0AF4-4A5E-A1B2-3564B7C0797B}" ShortID="148241722">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="589140593"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2" ID="{4C244093-3040-4CD0-A937-B38FACE2B158}" ShortID="155769222">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="629541414"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{9CDCAB22-46EE-4326-8DD1-E008052B53BB}" ShortID="37806283">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="820024505"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2" ID="{3E95F6EF-ABA0-44E6-8645-AC69C37E5B00}" ShortID="423649223">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="618837960"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{2E5993C0-06AA-4391-9697-23E18D6A6EC9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{DD63CD5C-73DE-48CA-954C-7D88E47C42A9}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{1BBF473B-5323-41CD-88FC-F693691D3B12}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{CCB87A85-2447-41BE-BF63-75437405512B}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{81161419-97C1-460E-AC7F-1FC12D88D1E7}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{6C434603-C633-44C5-9ED0-DA2FC81A30B1}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{9CDCAB22-46EE-4326-8DD1-E008052B53BB}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{7D824B0D-9663-4B05-8335-E08129B58B57}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2" ID="{785A1380-9207-425A-84C5-9AB1A66B648F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2" ID="{7CE38A84-0AF4-4A5E-A1B2-3564B7C0797B}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{4D12122E-B530-4206-BB10-F4C83686372C}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2" ID="{AABFD482-EBA3-414F-90EC-467E78F37CA9}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2" ID="{3E95F6EF-ABA0-44E6-8645-AC69C37E5B00}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{16EE00C3-6309-4F37-B905-02FE1292B832}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2" ID="{7883CD22-9234-42EC-9549-6410DC4CCA35}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2" ID="{4C244093-3040-4CD0-A937-B38FACE2B158}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{DE003407-F430-49D9-89FD-81AF69B7DCD2}"/>
+												<MusicCue Name="Exit Cue" ID="{CEB6D894-6E78-40AE-8058-D8B752851BEE}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="12250"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="SwampLands_MxDemo_Mod03" ID="{4CC52850-4D08-4BE7-803D-481172594250}" ShortID="863287382">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12575.1419013596"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Harmony" ID="{423FCC2F-C445-456C-8FE3-D705204ABD5C}" ShortID="133228420">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3" ID="{8A2BF632-CCF8-451D-B73A-7FEEBB1E0940}" ShortID="924929807">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="59277095"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{CE6F5C3D-435B-410B-A4AF-6A981EF784D1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{2ECA14D1-4DF4-4A31-A15B-C7875D61452C}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{E0792F59-0D1D-4F61-8CF0-7CC7A20815AA}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3" ID="{F2BED93A-8F33-4F43-98DD-954FB3395DFC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3" ID="{8A2BF632-CCF8-451D-B73A-7FEEBB1E0940}"/>
+																</MusicClip>
+															</ClipList>
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{6A374729-FFC6-4999-A48A-87B4B58C3A12}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Melody" ID="{3A4D3A01-F13E-4A6F-A6B9-EC5F0809C1E7}" ShortID="210749952">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3" ID="{CB5F7B4A-93E1-41F2-B00D-5B2C5D8B10D2}" ShortID="12182737">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="375158056"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3" ID="{E7092DAC-FF68-4285-BF7F-1377CBF02BEE}" ShortID="1060213271">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="222206927"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{2C3D9A7C-84C7-4006-B983-460B2CE0A9F4}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{EC30901F-2D7F-49DD-8666-97975629E504}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3" ID="{E18EF89A-9354-4489-9241-C037A26F8358}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3" ID="{CB5F7B4A-93E1-41F2-B00D-5B2C5D8B10D2}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{A8FCF3FC-D3B2-4EBF-8F5B-C1FFC71DA64F}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3" ID="{72AB4443-D6B9-4889-B5DB-867E1450BCC0}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3" ID="{E7092DAC-FF68-4285-BF7F-1377CBF02BEE}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Rhythm" ID="{52CE07A9-6CEF-4EBF-873E-A3530CA75AC6}" ShortID="308699235">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3" ID="{E7EA13B9-B329-44EB-9A21-F6BF73E34683}" ShortID="456736030">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="938049341"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{70B7AD60-FC87-48C1-B459-820A2507A626}" ShortID="692891332">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="621551677"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3" ID="{84445D08-F219-4962-8550-22CD0F0BD381}" ShortID="488785060">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="311683345"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{9EC07A95-F7C0-4F9A-A415-3BA4CA700D17}" ShortID="453398492">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="849930600"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3" ID="{C5380989-0608-42A3-A0C3-915B3506AC1B}" ShortID="890305511">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="817891240"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{4B13014E-126A-4B4E-B62C-B9B88A54F4B5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{04C20C49-4E16-49B7-ABE0-A9EC55BE0F24}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{DD21E891-8844-432C-BD0A-B2A9FC5B7F55}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{70B7AD60-FC87-48C1-B459-820A2507A626}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{9822A236-EFC0-4AFD-A1A3-C6BAD5F9C629}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{7D5C5D29-CA19-4AC4-90BB-C79B3EA1E75A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{9EC07A95-F7C0-4F9A-A415-3BA4CA700D17}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{E59A40F5-B363-473F-977D-581640CB794D}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3" ID="{94AAA710-B9EB-49CF-B753-B51BF65F063A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3" ID="{C5380989-0608-42A3-A0C3-915B3506AC1B}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{B356731F-3476-4D1F-BF06-A051C786062F}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3" ID="{86629A7A-A59B-4273-AD7B-1C653A391C35}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3" ID="{E7EA13B9-B329-44EB-9A21-F6BF73E34683}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{4EE47FD1-4ECA-499D-B441-105E8BAC1CD3}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3" ID="{885BFD4E-70B9-4BC7-9760-D6FE9A723F6D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3" ID="{84445D08-F219-4962-8550-22CD0F0BD381}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{8E0E0565-E51E-432C-8087-DD6056FAA344}"/>
+												<MusicCue Name="Exit Cue" ID="{3BF0B167-F66D-4532-9DF5-A882A4218552}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="SwampLands_MxDemo_Mod01" ID="{74E53E15-EF0F-48B3-B043-F4520127F689}" ShortID="653604654">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12805.4798327898"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod01_Rhythm" ID="{CA8EEBF9-A3E4-47B2-A024-4DC10C7D89B9}" ShortID="579068361">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{1FC16DFB-2846-4205-9AEF-1E34D8A1DAD6}" ShortID="433081098">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="503213644"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1" ID="{A64FDAF4-616D-4D80-97B2-2493417A88AB}" ShortID="609212266">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="432733184"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{786CCA04-5EB8-441B-9787-11828D647A0A}" ShortID="705786396">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="551865548"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{FC903C4E-15DB-437A-BC74-D91696FCC117}" ShortID="632596512">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="981671965"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1" ID="{0665CAB0-CC82-4B13-A362-4DD5C5152642}" ShortID="7264282">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="856202188"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{FEDBBE2F-75AE-4EBC-A65E-7CD944448249}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{2DA1940D-C9C9-4F6C-8713-7F3E877A80E6}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{2BD57236-5D96-4B01-A035-6F2955C1E825}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{D3298865-3FA1-43D3-8F97-F4A3FA85CDCC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{786CCA04-5EB8-441B-9787-11828D647A0A}"/>
+																</MusicClip>
+															</ClipList>
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{21A61BBE-1F84-4C0F-A692-A502220F8BE8}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{38F6D196-D806-4C39-9D8D-0B6E7957FAB9}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{1FC16DFB-2846-4205-9AEF-1E34D8A1DAD6}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{C4808AEC-6433-47AB-9781-F48FB61FF396}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{02941704-6AF9-40B6-8512-9997D326F07E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{FC903C4E-15DB-437A-BC74-D91696FCC117}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{35B4BAA5-6FC0-4300-B46D-6EA69CD84853}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1" ID="{F237BC71-DEC0-4C28-934E-59B0A6AA608B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1" ID="{A64FDAF4-616D-4D80-97B2-2493417A88AB}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{25BF6648-014F-4F00-9619-D221C9DEFD8B}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1" ID="{BB5E690C-ACC0-4668-84F0-892B90B3AD3D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1" ID="{0665CAB0-CC82-4B13-A362-4DD5C5152642}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod01_Harmony" ID="{CD6EEEF3-FFDB-4EA8-A85E-424F65A0C500}" ShortID="182812909">
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{54082414-54E2-4539-859D-42213253B95A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{C3D201D6-AB20-4E8D-9FAD-490A0611901A}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{C142E711-4079-4B81-B26F-37D04502DD86}">
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod01_Melody" ID="{F924FA79-12C0-488F-ABD0-A94D22C668FB}" ShortID="362857291">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1" ID="{0462D9CB-E119-4D17-89CB-4DC5993C1E5F}" ShortID="131959219">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="460219514"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1" ID="{8554408C-68C2-4D5B-A049-02AD4C4ADE1B}" ShortID="774681845">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="193361992"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{0EDF2CD3-C962-48AC-A505-D18285A55FFB}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{AF9FB335-E400-42D6-BF20-367446FA3352}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1" ID="{F1816E30-B42E-4510-AA6F-936CB4094605}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1" ID="{0462D9CB-E119-4D17-89CB-4DC5993C1E5F}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{61E735AC-3472-42B1-9A87-12B643C58B3F}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1" ID="{29A27A5B-E42D-4C4C-BAC9-8E0991F7E546}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1" ID="{8554408C-68C2-4D5B-A049-02AD4C4ADE1B}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{D3D55805-38E5-4267-825D-3E145C650599}"/>
+												<MusicCue Name="Exit Cue" ID="{4B5DD7F7-371A-4907-A2B3-5E09EA23ECAB}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{298E151A-D5B9-4B60-8CB7-A136B264613C}">
 											<PropertyList>
@@ -1534,7 +2532,7 @@
 										<MusicPlaylistItem Name="" ID="{A770BCDA-DED5-42D0-8709-625C433D7386}" ShortID="440705609"/>
 									</Playlist>
 								</MusicPlaylistContainer>
-								<MusicPlaylistContainer Name="SwampLands_Medium" ID="{9014FB47-5593-49EE-A0BB-608CD81373FF}" ShortID="124539987">
+								<MusicPlaylistContainer Name="SwampLands_Low" ID="{9014FB47-5593-49EE-A0BB-608CD81373FF}" ShortID="124539987">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
@@ -1543,6 +2541,650 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="SwampLands_MxDemo_Mod00" ID="{8D8CA328-F232-4134-B757-487FC8430211}" ShortID="780779125">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12816.9315158899"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod00_Rhythm" ID="{7720D7A1-8C5A-4A63-ADCF-943E653ED953}" ShortID="1068945253">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{0596D823-1B04-4931-96C3-585ECC45DFEF}" ShortID="949745288">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="732870527"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{751E624A-A07C-44CD-9FE5-FE517E95BB82}" ShortID="876661079">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="10694344"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{29113924-F80F-47A9-9E1A-2E4635EFECFD}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{3674C402-15BA-4D18-B375-13C1E3DE0488}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{B71E41BF-88C1-4F30-9F67-75B086394617}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{9A72BBB0-90E4-4885-AA14-03274531B11F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{0596D823-1B04-4931-96C3-585ECC45DFEF}"/>
+																</MusicClip>
+															</ClipList>
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{89746115-E788-49B2-8556-24E0F508E802}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{DAB01459-00D4-4B04-B5E9-482101C13096}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{751E624A-A07C-44CD-9FE5-FE517E95BB82}"/>
+																</MusicClip>
+															</ClipList>
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod00_Harmony" ID="{227604BB-8BC3-4892-B337-E63B5E04E212}" ShortID="231508088">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{E79D112C-E117-453D-9B5B-12DB13CE1F80}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{E003FFDC-3CBB-4020-B94C-09B7FA016819}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{30831817-8C3C-40E0-A529-D39D792A0445}">
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod00_Melody" ID="{7A2B7045-2753-410E-893C-BD08C03B0F48}" ShortID="48371226">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{A3CA9617-E9E1-4F79-9251-3645DA402BE9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{5B84405E-0A91-4A68-BDEA-FADE7BD08AEB}"/>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{4FB2B850-A192-4FBD-87A6-2226C85B7FBC}"/>
+												<MusicCue Name="Exit Cue" ID="{FB7ED116-D803-43F7-98FF-B0823D7451E8}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="SwampLands_MxDemo_Mod02" ID="{68317064-F44B-44FE-9E86-54CBED0EE915}" ShortID="35793123">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12885.1360544218"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Harmony" ID="{9FE2CC97-32C8-429B-BFAD-B7E8CD7F4E7D}" ShortID="1059765186">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{CCA191F3-AE47-4993-A0F0-D15B4876CE3F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{4B921B4E-1F07-4CC2-A718-9184B80586FB}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{53DBD589-37EE-471B-AA09-5BBB31B81C69}">
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Melody" ID="{5FBEAB2B-D75D-4786-B358-0AABF78D7658}" ShortID="987500430">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{D51A4CE2-CB35-403D-B395-F327E9DCA979}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{ACED61F5-1284-44D9-92CD-C2F8AB2BB8AD}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Rhythm" ID="{0CC14722-7871-41D1-AC8D-F16D3013CD71}" ShortID="531925057">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{CB191249-FBCA-4F5D-999D-42F601E717D6}" ShortID="1059064925">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="965882114"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{EE7F2A56-7D92-439D-ACB0-021E4B807CEC}" ShortID="927845810">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="820024505"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{8918E2F0-F9DA-4253-BCD4-E4EBB7A8767E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{8207349B-B2F2-4425-92E9-EAC7092F230B}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{5F35439A-B676-4445-A312-20217CE0C022}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{CB191249-FBCA-4F5D-999D-42F601E717D6}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{B1F8A251-776A-4EEF-98BE-6C7C195D5845}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{83927F37-5C8C-4911-B641-639E0A82D5FF}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{EE7F2A56-7D92-439D-ACB0-021E4B807CEC}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{4FAF160E-2D7C-494B-B3CF-DA81807EF19D}"/>
+												<MusicCue Name="Exit Cue" ID="{1E0C8C87-3276-4729-8F93-17C4197305C8}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="12250"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="SwampLands_MxDemo_Mod03" ID="{9209B3C2-DF89-4C8A-8D41-797F1096BA8E}" ShortID="46453423">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12575.1419013596"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Harmony" ID="{426C0CFD-4158-45D8-BD05-149D1133B056}" ShortID="597036101">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{A8F64469-9F03-4237-8160-409B527B3FEE}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{DAA6E7FD-E5B7-4631-AEAB-5792EA3EEA4F}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{614D2E9C-EDC1-4C7A-975F-C259EE9CFF17}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Melody" ID="{1CA9B14E-2F48-4511-921B-A40A8FF10A46}" ShortID="245132282">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{C137EDB5-61EF-457B-B33B-5C6FF31EFB28}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{A534B536-727E-42A4-A7EA-98F127EAFC1F}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Rhythm" ID="{C94DBFA6-CE44-45AA-9313-5D8A71CBBFC2}" ShortID="401258520">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{0D2CC998-0DFE-474E-AAF0-EDA00C19FCF5}" ShortID="463936519">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="621551677"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{91886E54-DBA4-4097-8357-8C4E343C57B0}" ShortID="1067401078">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="849930600"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{11DBF120-9A11-492B-9E29-B6781845C1BA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{C605C6CE-123B-497D-AEE4-BF734A78E978}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{4BF785D0-381B-47D7-8605-5B581A8CDC7E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{0D2CC998-0DFE-474E-AAF0-EDA00C19FCF5}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{413FFF27-8ADC-4E32-A9C5-E6A85F02B717}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{9260F74F-FBAE-498B-9B17-BE4DBD05C45A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{91886E54-DBA4-4097-8357-8C4E343C57B0}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{264A2FC5-E924-4EB2-8878-A8D639EBFA61}"/>
+												<MusicCue Name="Exit Cue" ID="{035644DE-3CF6-4EDF-BEDE-06782538F8ED}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="SwampLands_MxDemo_Mod01" ID="{B3343885-BE65-4844-8A35-520F9C8110E8}" ShortID="885553107">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="12805.4798327898"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85E480C4-CDE8-4148-B75E-6DC231AAC815}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="SwampLands_MxDemo_Mod01_Rhythm" ID="{0F003B71-4C69-4898-8802-11ED0D2AEDB6}" ShortID="380310961">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{1B11E1FA-9D6E-4959-8C45-54D850318645}" ShortID="140121519">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="503213644"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{3E29903C-9CE9-40E5-BD44-B90E2871675E}" ShortID="19794435">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="551865548"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{83E56041-BEE6-4E3B-915A-2F7BA9DA079B}" ShortID="465763361">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="981671965"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{690FCA16-7169-4ECD-80A8-1C7E5CE321BF}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{C1207C1F-E5C7-425B-9D20-1A0D2BDE3902}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{4439C265-D209-4593-9394-3A87F935B45E}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{F985D11E-F16B-4E99-9C9B-9A6EE7EC3959}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{3E29903C-9CE9-40E5-BD44-B90E2871675E}"/>
+																</MusicClip>
+															</ClipList>
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{A5F5D7FF-4F62-4DC6-8C25-BEF58924401D}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{D05E0D9B-1EF1-4C60-8B37-9F0F73E87969}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{1B11E1FA-9D6E-4959-8C45-54D850318645}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{BBA92B47-BB8D-45A5-BB7D-B809BE8E785F}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{E21B930C-F9AB-4FF9-BF22-712151A53B09}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{83E56041-BEE6-4E3B-915A-2F7BA9DA079B}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod01_Harmony" ID="{BE60C963-94EF-457F-820A-4F4856BD3DFB}" ShortID="575517403">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{BAE49619-E49A-416A-85FF-27C54A3E3BDB}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Intensity" ID="{F7E07337-8FA1-4EA0-A753-420116CEBC06}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{68A6DD14-20A2-41AC-9BF0-A70F3E9F669F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{E91256D9-C08B-4105-AA7B-78AFFA7DD58E}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{6EE1F114-C3FF-4369-BE38-8FF5B0A84EB6}">
+															<ReferenceList>
+																<Reference Name="TrackSequenceSwitch">
+																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod01_Melody" ID="{5EA8AF20-8D2D-4EB8-B1AF-7CC424DA31E2}" ShortID="729476695">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{1CEE8893-C3C1-4BBC-9DA8-71B49D2A0283}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7C90F0B2-3A46-4E60-8303-DCF977AC8050}"/>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{CCE57A4F-3EB6-43FE-BB1E-9916ADE68002}"/>
+												<MusicCue Name="Exit Cue" ID="{D36B8B05-2B82-4C6D-AEA3-844B673BE221}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{E01DB26D-02BA-481A-98CF-DF627B8AD6FB}">
 											<PropertyList>
@@ -1579,7 +3221,7 @@
 									<ChildrenList>
 										<MusicSegment Name="SwampLands_MxDemo_Mod02" ID="{A672D242-C89C-41F0-B629-C957FBCBDE3E}" ShortID="462027372">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="12375"/>
+												<Property Name="EndPosition" Type="Real64" Value="12885.1360544218"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-5</Value>
@@ -1748,6 +3390,183 @@
 														</MusicTrackSequence>
 													</SequenceList>
 												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Melody" ID="{DB26D484-4962-431E-BDB1-7926A74BB479}" ShortID="854193692">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2" ID="{C103A79E-5C5E-4295-9A5C-50F6538D0499}" ShortID="294065487">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="834665210"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2" ID="{2461E023-85F5-4E57-B840-6C791C6B12C1}" ShortID="1006704028">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="15562719"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{5E5F3D11-EC65-4022-8318-03F329112E92}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{224C6EF3-4812-469E-9482-FF3BCFFA0F8A}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2" ID="{CBCE54AC-EEF4-4944-B92D-A426F4D4AA9E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod2" ID="{C103A79E-5C5E-4295-9A5C-50F6538D0499}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{DCB957F1-D4D8-46BD-87C4-F75AC41B9F25}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2" ID="{BB67F418-7E7F-4DB8-9505-B1FA0FD55AAF}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Meldoy_01_Mod2" ID="{2461E023-85F5-4E57-B840-6C791C6B12C1}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod02_Rhythm" ID="{EA275AEF-9679-49EF-B32C-58478A370C4C}" ShortID="728367972">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{A7C4F945-F40D-41CC-8FD6-191DE6136E45}" ShortID="553871292">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="965882114"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2" ID="{0143E084-98D8-4214-A3FB-3D73356853CB}" ShortID="1004690679">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="589140593"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2" ID="{93D4FDE1-95C2-4F28-A32F-7997A26C6623}" ShortID="534020993">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="629541414"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{B80FFC8D-C9E5-4650-8154-5213471F5CE7}" ShortID="977121392">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="820024505"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2" ID="{E294D5B3-3CF0-4B97-B8E5-E1F7B3224C07}" ShortID="146865265">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="618837960"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{F7D6D4D0-FF44-4128-8D41-3DBA93ADC384}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{8EA07A3B-D9F6-4D4E-9A66-772109F360DB}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{1BB07608-4DA5-4B45-94A1-1B0DCDF9BFBB}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod2" ID="{A7C4F945-F40D-41CC-8FD6-191DE6136E45}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{39EEBB65-07EE-41AE-AB9C-047130F4A2B2}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{2400C6CA-AEE3-4AE1-B63C-99C5E509D023}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod2" ID="{B80FFC8D-C9E5-4650-8154-5213471F5CE7}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{A033BC53-8C6D-4594-AE9C-FF662ED973E9}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2" ID="{5137EAB1-9C6C-4C39-BCD1-68337B8845E3}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod2" ID="{0143E084-98D8-4214-A3FB-3D73356853CB}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{5A5FC906-D584-4D72-98F6-A0F60C9E5C94}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2" ID="{A9E866A4-23EB-44CC-82A1-91D1C465B081}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_01_Mod2" ID="{E294D5B3-3CF0-4B97-B8E5-E1F7B3224C07}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{A0667B71-D976-410A-A70C-39BD8300539C}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2" ID="{BB372694-573F-4F72-8FD6-A2CED1F8A08E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod2" ID="{93D4FDE1-95C2-4F28-A32F-7997A26C6623}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
 											</ChildrenList>
 											<CueList>
 												<MusicCue Name="Entry Cue" ID="{85DC30A4-84C5-4805-931E-298DA5314B2F}"/>
@@ -1761,7 +3580,7 @@
 										</MusicSegment>
 										<MusicSegment Name="SwampLands_MxDemo_Mod03" ID="{2E1DD190-42ED-411F-A87D-E5CEE7FF66A9}" ShortID="919183272">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="12053.0283954378"/>
+												<Property Name="EndPosition" Type="Real64" Value="12575.1419013596"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-5</Value>
@@ -1793,28 +3612,35 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3" ID="{45C058E2-F32E-418F-9EEE-2E358E29D91C}" ShortID="221992462">
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3" ID="{D6669134-22E5-4EB0-91C2-111E2C059238}" ShortID="31627728">
 															<Language>SFX</Language>
-															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3.wav</AudioFile>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="61615619"/>
+																<File ID="59277095"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
-														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3" ID="{4D06E877-30FB-440C-AFC0-543CEAA4600B}" ShortID="956252021">
-															<Language>SFX</Language>
-															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="126348838"/>
-															</ConvertedFileIDList>
-														</AudioFileSource>
-														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_00_Mod3" ID="{EF1F7B24-49FD-4DB5-B443-5E2BDE082F7B}" ShortID="396797128">
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_00_Mod3" ID="{04EA1AD1-4875-4044-AF40-270916CFB744}" ShortID="800583371">
 															<Language>SFX</Language>
 															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Harmony_00_Mod3.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File ID="483158301"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
-														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_03_Mod3" ID="{D1B70717-8AD8-4D6F-A502-09BE085410F4}" ShortID="182260089">
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3" ID="{072EEC04-6A5B-4C90-B040-8FD54950ADF2}" ShortID="253788650">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="126348838"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3" ID="{FFEFACBF-4CBA-4FBA-AAB9-5754D12FBE49}" ShortID="705107618">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="61615619"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_03_Mod3" ID="{94D07123-8AE1-44A6-BB0C-3218F436DB68}" ShortID="520956181">
 															<Language>SFX</Language>
 															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Harmony_03_Mod3.wav</AudioFile>
 															<ConvertedFileIDList>
@@ -1838,13 +3664,13 @@
 													<SequenceList>
 														<MusicTrackSequence Name="" ID="{394F8692-C4B7-4598-8148-5048CE88EFAE}">
 															<ClipList>
-																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_00_Mod3" ID="{A26C2D1B-D9ED-4D6A-831B-D235960C7B72}">
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3" ID="{4BBFAAB2-1339-4BD0-8D57-5D8CABE6DDE5}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_00_Mod3" ID="{EF1F7B24-49FD-4DB5-B443-5E2BDE082F7B}"/>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Harmony_01_Mod3" ID="{D6669134-22E5-4EB0-91C2-111E2C059238}"/>
 																</MusicClip>
 															</ClipList>
 															<ReferenceList>
@@ -1855,13 +3681,13 @@
 														</MusicTrackSequence>
 														<MusicTrackSequence Name="" ID="{0E49E1DE-0A7E-4D1E-9670-10EC4927BBDA}">
 															<ClipList>
-																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3" ID="{35754FD7-FBF5-4A56-A734-7B8F6FA1CA4A}">
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_00_Mod3" ID="{47EC2BDE-34DD-4660-84B8-B18649F44208}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3" ID="{4D06E877-30FB-440C-AFC0-543CEAA4600B}"/>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_00_Mod3" ID="{04EA1AD1-4875-4044-AF40-270916CFB744}"/>
 																</MusicClip>
 															</ClipList>
 															<ReferenceList>
@@ -1872,13 +3698,13 @@
 														</MusicTrackSequence>
 														<MusicTrackSequence Name="" ID="{B5EB4745-8048-4E3A-AD75-2BC706344358}">
 															<ClipList>
-																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_03_Mod3" ID="{243F9B99-2658-4207-91FC-22BF8CC1E7DD}">
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3" ID="{0C8049DC-3B00-49BF-ABBA-94862C8618E6}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_03_Mod3" ID="{D1B70717-8AD8-4D6F-A502-09BE085410F4}"/>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_01_Mod3" ID="{072EEC04-6A5B-4C90-B040-8FD54950ADF2}"/>
 																</MusicClip>
 															</ClipList>
 															<ReferenceList>
@@ -1889,13 +3715,13 @@
 														</MusicTrackSequence>
 														<MusicTrackSequence Name="" ID="{0B15BEB6-10F5-4C32-952B-C9C010CDD653}">
 															<ClipList>
-																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3" ID="{533A6CD2-C228-48C7-AAC3-F03AB7914168}">
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_03_Mod3" ID="{516BC344-1073-4D63-BF3D-180B7951FA5E}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3" ID="{45C058E2-F32E-418F-9EEE-2E358E29D91C}"/>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_03_Mod3" ID="{94D07123-8AE1-44A6-BB0C-3218F436DB68}"/>
 																</MusicClip>
 															</ClipList>
 															<ReferenceList>
@@ -1903,6 +3729,195 @@
 																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
 																</Reference>
 															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{86F17224-74C1-4DD2-AD2A-56D7962AA416}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3" ID="{07B18550-E4F3-45EB-9AF9-84177530C342}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Harmony_04_Mod3" ID="{FFEFACBF-4CBA-4FBA-AAB9-5754D12FBE49}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Melody" ID="{A94BFFBB-ADAA-42E0-895A-E315DF4ABF68}" ShortID="647705016">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3" ID="{475508CC-1A30-4736-9E6B-6C29EEBD695B}" ShortID="569718297">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="375158056"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3" ID="{749C1050-F4C9-461A-9539-4B9458752244}" ShortID="68859277">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="222206927"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{5036F2BE-2E91-43A2-ACAB-513E8417ED0F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{5AEC7BFD-5594-46D3-B049-35F0A81D594A}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3" ID="{3DA079BA-1A51-48B2-9E51-FE77F84CEC2E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod3" ID="{475508CC-1A30-4736-9E6B-6C29EEBD695B}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{E89E172A-C218-447E-B0D9-712479328FF1}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3" ID="{90B43CC9-2C68-4374-805B-59354CEA002C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod3" ID="{749C1050-F4C9-461A-9539-4B9458752244}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod03_Rhythm" ID="{15A0F82F-F7BA-4D28-819A-5AC72FC189F6}" ShortID="513825647">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3" ID="{C0ED48D4-28A4-433F-A172-AAAB9BC8E57E}" ShortID="881925777">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="938049341"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{A69F67F8-3851-49C6-A613-B6DE3B6D8408}" ShortID="1006854368">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="621551677"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3" ID="{406C97FC-E409-44AF-90CD-D3823949BDD7}" ShortID="1051079369">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="311683345"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{3FB8A7BF-7CEB-4B83-8778-16C538B82E26}" ShortID="465771345">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="849930600"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3" ID="{7485AAE2-C592-48A4-9E8F-40757809B2E0}" ShortID="417254519">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="817891240"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{5CA2525A-0428-4855-9A71-046E524A973B}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7B0F198F-FFD0-427D-8215-DB769B515EC7}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{A0DD4537-366D-4919-91F0-23A222009216}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod3" ID="{A69F67F8-3851-49C6-A613-B6DE3B6D8408}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{06A5A1E5-F20A-467E-84F5-97E63DC15CF8}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{A4265ECB-45C8-4BDE-84B5-23EFDDB23505}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod3" ID="{3FB8A7BF-7CEB-4B83-8778-16C538B82E26}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{39FF614B-2C88-4EBC-A36A-74AEA4EEAC69}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3" ID="{750B60D4-146E-4068-A0AE-454D5998172D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod3" ID="{7485AAE2-C592-48A4-9E8F-40757809B2E0}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{A506976A-AF26-486A-8432-700E5584D977}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3" ID="{C8DA5698-D1CC-41F4-AC8A-37F9DE711439}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod3" ID="{C0ED48D4-28A4-433F-A172-AAAB9BC8E57E}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{117B6115-BB0D-4BEE-95B8-68AB3D0C2D4B}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3" ID="{845FC5B7-70E1-47FB-A44D-22F7A3199D2F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11999.2970521542"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_03_Mod3" ID="{406C97FC-E409-44AF-90CD-D3823949BDD7}"/>
+																</MusicClip>
+															</ClipList>
 														</MusicTrackSequence>
 													</SequenceList>
 												</MusicTrack>
@@ -1919,7 +3934,7 @@
 										</MusicSegment>
 										<MusicSegment Name="SwampLands_MxDemo_Mod00" ID="{55EC2224-F2CF-4324-A7CD-011E15E73E78}" ShortID="340560326">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="12230.0340136054"/>
+												<Property Name="EndPosition" Type="Real64" Value="12816.9315158899"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-5</Value>
@@ -1951,18 +3966,39 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0" ID="{CAD020DC-AA3D-4709-90EC-1ED7E8E10CB9}" ShortID="94182296">
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{960390F2-037E-42FD-933F-1477A25AF325}" ShortID="1073520669">
 															<Language>SFX</Language>
-															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0.wav</AudioFile>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="587667814"/>
+																<File ID="732870527"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
-														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod0" ID="{343DF9E9-EFB0-45DC-993E-578B2C8B2FFA}" ShortID="1060833825">
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0" ID="{0E8208C1-B66E-4CFB-AFE9-2BF2D5DB6FD2}" ShortID="431300395">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="281107942"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod0" ID="{E11F265E-4415-4C41-9C9F-2B1A3077A8B3}" ShortID="948121527">
 															<Language>SFX</Language>
 															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod0.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File ID="746869727"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{540A7597-F66D-40F9-8122-97FEAB45EFC6}" ShortID="893863380">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="10694344"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0" ID="{8D48306A-8C33-4E66-9B51-89ADCCEAB551}" ShortID="6424680">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="587667814"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1982,13 +4018,13 @@
 													<SequenceList>
 														<MusicTrackSequence Name="" ID="{BDD28A5A-047F-4633-8912-EF6DBBD6FCD8}">
 															<ClipList>
-																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0" ID="{058FBBD5-7C86-4006-A5AB-5104DBE784D4}">
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{C413FFBF-2BF8-4DD5-A5EE-33BB6489A808}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0" ID="{CAD020DC-AA3D-4709-90EC-1ED7E8E10CB9}"/>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod0" ID="{960390F2-037E-42FD-933F-1477A25AF325}"/>
 																</MusicClip>
 															</ClipList>
 															<ReferenceList>
@@ -1999,13 +4035,13 @@
 														</MusicTrackSequence>
 														<MusicTrackSequence Name="" ID="{4B15DC80-93A7-402A-948C-195D2F0C60B5}">
 															<ClipList>
-																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod0" ID="{E9C143B4-B260-4E96-B708-EE134FAD0325}">
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{DA881994-5274-475B-A49D-7524F2ED6D8C}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod0" ID="{343DF9E9-EFB0-45DC-993E-578B2C8B2FFA}"/>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod0" ID="{540A7597-F66D-40F9-8122-97FEAB45EFC6}"/>
 																</MusicClip>
 															</ClipList>
 															<ReferenceList>
@@ -2013,6 +4049,42 @@
 																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
 																</Reference>
 															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{15970847-2E5C-49AD-8031-BAA8F3B8308F}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0" ID="{ACD5639E-EDA7-4B29-BD79-6B3D1DC7C5CE}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod0" ID="{0E8208C1-B66E-4CFB-AFE9-2BF2D5DB6FD2}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{B6D884BE-0818-4E39-822D-0F536E1AC0CD}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0" ID="{34E561D1-B249-4DD1-85F9-209D21C16102}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_00_Mod0" ID="{8D48306A-8C33-4E66-9B51-89ADCCEAB551}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{18C12ACE-D27E-4BB7-9C83-45E7198D7A44}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod0" ID="{F5ECBE95-82ED-4BA7-AE4A-9B26D2402D10}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod0" ID="{E11F265E-4415-4C41-9C9F-2B1A3077A8B3}"/>
+																</MusicClip>
+															</ClipList>
 														</MusicTrackSequence>
 													</SequenceList>
 												</MusicTrack>
@@ -2097,6 +4169,66 @@
 														</MusicTrackSequence>
 													</SequenceList>
 												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod00_Melody" ID="{D0979F58-98C4-404F-B3A4-800A8879C4D0}" ShortID="247294091">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0" ID="{E59636D3-4528-4ADB-A94E-ADD719DE73D6}" ShortID="508990689">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="232843176"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0" ID="{B8239C39-D9AF-4534-B8A1-258EDCA323C2}" ShortID="802878886">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="671508526"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{D46BCD7C-28B4-4E48-811F-8DC380A3004E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{968508D7-FB6F-48E3-B314-19A480E4C6B6}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0" ID="{902D7068-2579-4DBA-BFBE-3D27E258A7F9}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12094.1950113379"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod0" ID="{E59636D3-4528-4ADB-A94E-ADD719DE73D6}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{915A45D2-A4DF-4705-A1D2-831857BDA430}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0" ID="{8792EA17-1F9B-4206-8CB7-E52056ED17E2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12105.0340136054"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod0" ID="{B8239C39-D9AF-4534-B8A1-258EDCA323C2}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
 											</ChildrenList>
 											<CueList>
 												<MusicCue Name="Entry Cue" ID="{C1DD2980-A9C9-4931-8CEE-8C7BB614A3B1}"/>
@@ -2110,7 +4242,7 @@
 										</MusicSegment>
 										<MusicSegment Name="SwampLands_MxDemo_Mod01" ID="{4B6F0F8C-0ED2-49D6-A1FB-53AAE15E18F8}" ShortID="225073365">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="12260.1360544218"/>
+												<Property Name="EndPosition" Type="Real64" Value="12805.4798327898"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-5</Value>
@@ -2142,11 +4274,46 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod1" ID="{20844E52-969D-4E80-8547-44C2D8D248CE}" ShortID="244920728">
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod1" ID="{6B598E97-9738-4FD9-8D30-2969D317086A}" ShortID="876009422">
 															<Language>SFX</Language>
 															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod1.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File ID="636026463"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{193AF452-2D4F-4FA5-A3D1-02C961027225}" ShortID="963185294">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="503213644"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1" ID="{C794574B-2723-424D-887C-7E94EEA66AD5}" ShortID="609299548">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="432733184"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{022EBFF8-34E1-4387-99C0-B3B7786EBFAA}" ShortID="433818226">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="551865548"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{20BC69FD-05BE-4323-A9BD-871D8A36CE4E}" ShortID="629007677">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="981671965"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1" ID="{821549BB-4B49-46BB-BA54-F4B0CCA91195}" ShortID="637769936">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="856202188"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2166,13 +4333,13 @@
 													<SequenceList>
 														<MusicTrackSequence Name="" ID="{A21C7410-6DC4-4B61-BB51-DBE3761F4E03}">
 															<ClipList>
-																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod1" ID="{8BF1BD17-40CF-4426-8389-E40AB433AE56}">
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{BFDE8A46-6DC8-4469-91FD-B97D86B0311E}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod1" ID="{20844E52-969D-4E80-8547-44C2D8D248CE}"/>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_00_Mod1" ID="{022EBFF8-34E1-4387-99C0-B3B7786EBFAA}"/>
 																</MusicClip>
 															</ClipList>
 															<ReferenceList>
@@ -2180,6 +4347,66 @@
 																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
 																</Reference>
 															</ReferenceList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{741C3D31-54E7-4C17-9F56-A86E400694CA}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{7145AC3F-DBC2-4098-944C-4FE4C2A83404}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_01_Mod1" ID="{193AF452-2D4F-4FA5-A3D1-02C961027225}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{A7018D8C-67A7-4D7A-B3E9-17AC6DF6755B}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{C013D9FC-B289-4282-8F8A-F8F39E5362F2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Low_Rhythm_02_Mod1" ID="{20BC69FD-05BE-4323-A9BD-871D8A36CE4E}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{3F427377-43E7-4C08-A3B5-943E0D07393E}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1" ID="{D760C26E-2B68-4CD0-80D8-6DFA9F8F751D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_00_Mod1" ID="{C794574B-2723-424D-887C-7E94EEA66AD5}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{2BB929E3-3FC2-466C-91DD-32258536C32B}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1" ID="{F0491840-FCC7-404D-A684-CAD3F8A701CC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Rhythm_02_Mod1" ID="{821549BB-4B49-46BB-BA54-F4B0CCA91195}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{4DF7457A-5598-4452-91D4-D069CF4FA376}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod1" ID="{717FB508-0DCE-402F-AF47-071F3AD9337F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ High_Rhythm_01_Mod1" ID="{6B598E97-9738-4FD9-8D30-2969D317086A}"/>
+																</MusicClip>
+															</ClipList>
 														</MusicTrackSequence>
 													</SequenceList>
 												</MusicTrack>
@@ -2309,6 +4536,66 @@
 																	<ObjectRef Name="High" ID="{CCDC2F28-5348-4319-8F1B-8ED913748002}" WorkUnitID="{595DA5B6-DBF7-48C5-95C9-78C568A5529B}"/>
 																</Reference>
 															</ReferenceList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="SwampLands_MxDemo_Mod01_Melody" ID="{9C6627FB-CF5A-46FC-BCE7-DF24B9383AF6}" ShortID="461543819">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A88DBC-ABF2-41E5-B033-C5C8D899386C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1" ID="{C96C72C3-F8C1-45BF-9C2C-CB35DE955736}" ShortID="264339581">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="460219514"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1" ID="{DA325BC0-395D-4884-B812-15DB57070BEA}" ShortID="900199073">
+															<Language>SFX</Language>
+															<AudioFile>Justin_SwamplandMusicDemo\FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="193361992"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{3C8F3C9C-4A0E-4870-99ED-43F9EBE66C7C}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{E49E1E11-3907-4AF4-A80E-FE97A563C7D0}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1" ID="{10A2778F-3228-425A-A75E-828652C424BC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_00_Mod1" ID="{C96C72C3-F8C1-45BF-9C2C-CB35DE955736}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{EDEDDE72-E63F-4503-AFE8-0ACD2755F25C}">
+															<ClipList>
+																<MusicClip Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1" ID="{6BB11881-AD9A-41B0-9870-BA1087178B02}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12260.1360544218"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="FW_Mx_OW_Swamplands_Main_ Medium_Melody_01_Mod1" ID="{DA325BC0-395D-4884-B812-15DB57070BEA}"/>
+																</MusicClip>
+															</ClipList>
 														</MusicTrackSequence>
 													</SequenceList>
 												</MusicTrack>
